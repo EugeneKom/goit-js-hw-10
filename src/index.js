@@ -22,10 +22,7 @@ refs.searchInput.addEventListener(
 );
 
 function takeInputValue(e) {
-  console.log(e.target.value);
   valueInput.searchName = e.target.value;
-
-  console.log(valueInput.searchName);
 
   fetchCountries(valueInput.searchName.trim())
     .then(reviceMarcup)
